@@ -1,0 +1,26 @@
+Installation for Phasics SDK and SID 4 has to be performed first:
+
+1. Insert the SDK dongle in a USB port on the computer
+2. Run the SDK setup application from the Belladata (H) drive
+3. Run through all the installations that pop up. The installations for the Camera Driver and Qcapture suite keep prompting to be installed again even after being installated again.
+
+
+1. Run the driver installation setup application from the Belladata (H) drive.
+2. Restart computer and remove the SDK dongle
+
+
+
+1, Run the SID4 setup application from the Belladata drive (H)
+2. Insert the SID4 dongle
+3. Run through the installations
+
+
+Run the SID4 software and set the camera to acquire in Pulse High trigger mode: 5
+Enter a timeout value and hit Save button. This will save the user profile.
+Test the SID4 software with triggers
+
+If the above test works, use the getsetparameter.vi to test triggers. (Note: Make sure that the error coming oout of grab image.VI is cleared so that the program does not quit when there is a trigger timeout error
+
+
+Note: If there is a trigger timeout, the camera is restarted by the SDK using the defaults inside the user profile. SO it is a good idea to save triggered High pulse settings in the profile and start the camera device with trigger on. Switching to continuous mode by switching off the trigger setting in device is allowed.
+

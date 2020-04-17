@@ -1,0 +1,9 @@
+This devcie uses a NI daq pad. Users need to create a DI task and enter the task name as a variable in the db for this devicetype. 
+triggerbeforepulse variable is the time between the trigger pulse input to the daq task and the arrival of the actual laser pulse.
+The hamamatsu always runs in asynchronous mode with internal software triggers. It will acquire a minimum of 3 acquisitions if the exposure time is equal to or greater than the triggerbeforepulse time.
+example: triggerbeforepulse = 10 ms, exposure = 5 ms , No of acquisitions = (triggerbeforepulse/exposure)+3 = 5 acquisitions.
+Try to keep the exposure nearly equal but slightly smaller than triggerbeforepulse. It will ensure the capture of the spectral signal.
+
+
+
+

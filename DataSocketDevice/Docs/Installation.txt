@@ -1,0 +1,10 @@
+Each Datasocket device can read up to 32 variables.
+The VariableCount parameter has to be set to the no of variables the device should read (max 32)
+The datatype of the parameter can be either boolean or double. 
+
+For double datatype, Device currently expects an array of string which is converted to double. Devices/datasocket connections which send double array will not work.
+
+For Boolean datatype, T/F is converted to 1/0 and saved in the database.
+
+
+

@@ -1,0 +1,2 @@
+If the device is power cycled, manually turn on the valves and give a setpoint. After that press the ON button on the panel to enable the remote commands from the MC
+

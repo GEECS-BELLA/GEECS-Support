@@ -1,0 +1,5 @@
+PR1,2 Display as pressure (PR = Pressure)
+FL1,2 Display as Flow (FL = Flow)
+Signal Mode SM1,2 (2 = Independent, 4 = Slave)
+
+Set RG (range) of  each channel to configure pressure or flow

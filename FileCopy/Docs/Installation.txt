@@ -1,0 +1,16 @@
+PLasma 1 HP controtroller (300 psia) is an absolute pressure controller. All others are gauge pressure controllers.
+
+All Alicats have to be manually given unique address starting from A to Z
+
+Currently the device on the control system for AlicatPC interacts with 2 controllers at a time.
+
+The Gauge meter (Device 3) should be enabled if present.
+
+Absolute pressure set is implemented in the GUI and not in the device. (GUIS have to be changed)
+
+
+PL2-PresCtl device is based on the old AlicatPC device type
+It is located on computer 14.67 connected to the COM to USB trip lite (COM14).
+Both the controllers on PL2 are now Gauge units as there is no gauge reader connected.
+
+

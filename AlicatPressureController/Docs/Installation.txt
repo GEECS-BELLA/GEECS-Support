@@ -1,0 +1,11 @@
+The Alicat pressure Controller devices type is a much simpler device than the AlicatPC. 
+
+The variable, ATMReaderEnabled has to be ON if the Atmospheric reader is available on the system and the pressure controller is a PSIG controller.
+
+When the ATMreaderEnabled variable is OFF, it should be assumed that the measurement units are in the native units of the controller being used.
+
+There is another variable called WaitForSteadyStateEnable. This variable turns on an algorithm that waits for the pressure to reach steadystate before sending a slow response to Master Control.
+
+All readings are in PSIA for PLASMA 1 as of April 25th 2013
+PLASMA 2 cannot be used
+

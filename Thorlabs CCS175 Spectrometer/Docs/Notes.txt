@@ -1,0 +1,47 @@
+The timeout configuration case can be used only for USB Spectrometers, i.e. will not work on network spectrometers.
+=================================================================================================================================================================================================================================
+Trigger Mode settings caveat:
+
+setExternalTriggerMode:
+
+public void setExternalTriggerMode(int spectrometerIndex,
+                          int mode)
+Sets the external trigger mode of the spectrometer.
+Parameters:
+spectrometerIndex - (0-n) of desired spectrometer in our collection of attached spectrometers. Defaults to channel 0 of the selected spectrometer.
+mode - int, The meaning of this parameter depends on the version of firmware in your spectrometer. You should consult the OEM data sheet for your particular spectrometer to be certain of the modes it supports.
+For firmware versions 3.00 and higher, these are the standard modes: (see http://www.oceanoptics.com/technical/External-Triggering2.pdf for details)
+
+0 = normal (free running) mode
+1 = software trigger mode
+2 = external hardware level trigger mode
+3 = external synchronization trigger mode
+4 = external hardware edge trigger mode
+For older firmware versions, many of the spectrometers support the following modes:
+
+0 = normal mode Spectrometer is "free running" (ie. continuously acquiring new spectra). Integration time is determined by calling the setIntegrationTime() method. 
+When you call the getSpectrum() method, it will "immediately" return with the next available spectrum, subject to delay due to the length of integration time, number of scans to average, and possibly a stability scan.
+1 = software trigger mode Uses a "level triggered" signal as opposed to an "edge triggered" signal. In this mode, the spectrometer is operating in "free running" mode (ie. continuously acquiring new spectra). Integration time is determined by calling the setIntegrationTime() method. When you call getSpectrum(), this method blocks until the trigger signal goes "high". It then returns the next completed spectrum acquisition. As long as the trigger signal remains high, calls to getSpectrum() will return immediately (subject to the integration time you have set).
+2 = synchronization trigger mode In this mode, the integration time is automatically determined by the spectrometer, based on the average length of time between the trigger signals you supply.
+3 = hardware trigger mode Uses an "edge triggered" signal to initiate acquisition of a new spectrum. In this mode, the spectrometer enters a "sleep" state until the rising-edge of a trigger signal initiates the acquisition of a new spectrum. Your call to the getSpectrum() method will block (ie. not return) until a new spectrum has been acquired.
+4 = single-shot trigger mode (aka quasi-realtime mode) This mode is only supported by certain specific spectrometers, such as the QE65000, NIR256, and NIR512. In this mode, the spectrometer automatically sets its integration time to the minimum allowed value and then begins to continuously acquire spectra. The user then calls wrapper.setIntegrationTime() to set the integration time to the desired period. The spectrometer completes the current spectrum acquisition, which should be very quick since the original integration time was the minimum allowed value. Then it sets the new integration time and immediately begins to acquire a new spectrum using the new settings. After the new spectrum has been acquired, the spectrometer automatically reverts back to the minimum integration time. 
+The purpose of this mode is to allow the user to initiate the acquisition of new spectra having lengthy integration times at precisely controlled starting points in time.
+Important note on changing the external trigger mode 
+The trigger mode of a spectrometer may only be changed while the spectrometer is actually acquiring a spectrum. This is not a difficulty when changing the trigger mode from mode 0 to any other mode, since in mode 0 the spectrometer is acquiring spectra continuously. However, if you are in modes 1, 2, or 3, you must take steps in your application software to ensure that your call to setExternalTriggerMode() occurs while the spectrometer is actually acquiring a spectrum.
+
+
+=================================================================================================================================================================================================================================
+
+
+Driver Installation instructions for NIR256-2.5 spectrometer:
+
+1. Plug in the device to a USB port of the computer
+
+2. In device manager, update software andmanually point to the C:\Program Files\Ocean Optics\OmniDriverSPAM\winusb_driver folder to search for drivers.
+
+3. Device will be visible as OceanOptics USB Devices (Ocean Optics NIR256 (WinUSb) in the device manager after installation.
+
+
+
+
+

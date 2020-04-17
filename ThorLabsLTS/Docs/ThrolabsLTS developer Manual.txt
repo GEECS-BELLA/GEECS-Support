@@ -1,0 +1,15 @@
+
+
+Details of ThrolabsLTS Project
+
+1. Copy Kinesis folder to project location from "C:\Program Files (x86)\Thorlabs"
+otherwise .net control used in the code will not load properly.
+
+2. .Net control used for ThorlabsLTS300 motor is "LongTravelStageControl" (asked to technical support of Throlabs).
+
+3. Simulation and SerialNumber are two devicetype Variable from settings cluster are SET=No.
+
+4. In this Project all devicatype variable Add or Edit operations are automated.
+
+5. Before Building this project please make sure to add Kinesis folder in project otherwise build gives error.
+

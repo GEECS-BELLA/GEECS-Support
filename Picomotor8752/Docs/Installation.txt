@@ -1,0 +1,4 @@
+the device has to be connected to a computer serial port using a null modem serial cable. it can also be connected to an ethernet switch. The Db editor has a mode variable that has to be switched for serial/tcp communication. provide the static ip for tcp or the COM port no for serial.
+The tcp communication is very slow as compared to the serial. cause unknown. Even test VIs from the company behave the same.
+
+Static ip address assignment is done using hyperterminal over serial connection. commands are in manual. baud rate 19200.

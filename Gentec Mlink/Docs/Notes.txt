@@ -1,0 +1,7 @@
+1. COMM ERROR WITH M LINK:
+
+Solution:
+
+The HPD_Energymeter connects to the M link and uses VISA resource ASRL9::INSTR.
+Sometimes this VISA resource is not released cleanly by the device. to verify connections launch the
+native software Gentec-EO ->"PC M link" in the device computer. The native software does an auto acan and chooses the correct VISA resource. exit the native software and launch the device again. 

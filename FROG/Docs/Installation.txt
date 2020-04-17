@@ -1,0 +1,14 @@
+Admin previleges required for account to bring up both cameras.
+Install the ueye camera drivers V 4.0.1 for 64 bit and v4.0.2 for 32 bit (32 or 64 bit depending on your computer. Drivers are on BELLADATA. Ensure you have selected to also install the labview driver.
+Also install the FROG software 5.1.0 (Not 5.3.1 64 bit) that comes with the Grenouille. Also on Belladata
+plug in top camera first and ensure it is installed correctly and green light is on
+same for bottom camera.
+Edit camera properties using ueye manager and change device id from 0 to x
+Database shows correct id for each camera.
+
+Done :)
+
+
+The frog has to be launched with the default camera selection set to Temporal Camera. Setting default as Spacial will result in errors when trogger mode is changed.
+
+

@@ -1,0 +1,1 @@
+Must have a valid active motor name set in the database editor or will create error. Configure set relatve bla bla bla calls another configure case that fails.

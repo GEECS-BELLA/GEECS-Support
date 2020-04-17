@@ -1,0 +1,4 @@
+1. Start Physical device
+2. turn on Software device (development Version)
+3. Go back to physical device and set the current limit to 1.0 (u should initially find it at 0)
+4. Now use MC to set the voltage level and next enable.

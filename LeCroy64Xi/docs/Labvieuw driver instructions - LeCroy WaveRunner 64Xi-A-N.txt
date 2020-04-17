@@ -1,0 +1,51 @@
+LeCroy WaveRunner 64Xi-A-N 600MHz Oscilloscope 10GS/s
+
+Manual for installation available:
+H:\Software\Installs and Manuals\LeCroy\lecroy-getting-started-icwave-lecroy-wave-series-lab-brief.pdf
+
+Implemented driver for master contorl in:
+C:\GEECS\Developers Version\source\Device Driver\LeCroy WaveRunner 64Xi\LeCroy Wave Series\LeCroy Wave Series.lvproj
+
+Or follow the instructions below:
+
+-----------------------------
+
+Step 1: connect LeCroy with an Ethernet cable to the computer were the device will be running.
+Step 2: On the LeCroy Scope itself go to "Utilities" in the top tabs --> Utilities Setup --> Remote (bottom tabs that opend) --> select "TCPIP" on the left --> Note down the Ip adress of the scope.
+
+This case: 169.254.20.90
+
+Step 3: Install "Teledyne LeCroy VICP Passport" from:
+C:\GEECS\Developers Version\source\Support\LeCroy64Xi
+or
+H:\Software\Installs and Manuals\LeCroy\lecroyvicppassportinstaller_v1.12.exe
+Or download and install it from:
+http://teledynelecroy.com/support/softwaredownload/home.aspx?capid=106&mid=533&smid=
+
+Step 4: "Install" LabVieuw driver
+	1) locate the "lecroy_wave_series.zip" file from:
+		H:\Software\Installs and Manuals\LeCroy\lecroy_wave_series.zip
+		or download it from: http://teledynelecroy.com/support/softwaredownload/home.aspx?capid=106&mid=533&smid=
+	2) Extract the zip file and place it in the labview library folder:
+		C:\Program Files (x86)\National Instruments\LabVIEW 2013\instr.lib
+		The folder schould be called "LeCroy Wave Series"
+
+Now you schould be good to go and launch the lvproj in: 
+	C:\Program Files (x86)\National Instruments\LabVIEW 2013\instr.lib\LeCroy Wave Series\LeCroy Wave Series.lvproj
+	you can try out the exemples in that project.
+
+
+
+-----------------------------
+
+Install LabVieuw driver from: 
+http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=07C0AC709BD14C10E0440003BA7CCD71
+
+Install "Teledyne LeCroy VICP Passport" from:
+http://teledynelecroy.com/support/softwaredownload/vicppassport.aspx?capid=106&mid=533&smid=
+
+Manual for installation available: 
+http://www.digikey.com/en/pdf/t/teledyne-lecroy/getting-started-icwave-lecroy-wave-labview-drivers
+
+Overvieuw of software/drivers available:
+http://teledynelecroy.com/support/softwaredownload/home.aspx?capid=106&mid=533&smid=

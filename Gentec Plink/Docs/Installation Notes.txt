@@ -1,0 +1,19 @@
+
+The LB Power Meter is called LB_PowerMeter and uses the Anywhere USB with IP address 192.168.14.136. Current computer : 192.168.14.67
+The native Utility "AnywhereUSB Remote HUB Coonfiguration Utility" has to be started and the connect button has to be clicked for the HUB.
+The COM port shows up as COM11 in Device Driver.
+This is used by the Device to read the Energy Meter readings
+
+
+
+Cheers!!
+
+The TEA Power Meter is called BELLA_TEA_PowerMeter and uses the Anywhere USB with IP address 192.168.14.73. Current computer : 192.168.14.81
+The native Utility "AnywhereUSB Remote HUB Coonfiguration Utility" has to be started and the connect button has to be clicked for the HUB.
+The COM port shows up as COM8 in Device Driver.
+This is used by the Device to read the Energy Meter readings
+
+
+
+Note: When 17.7 is switched off or rebooted and 14.77 is running/ON. The AnywhereUSB Hub automatically jumps and connects to 14.77. 
+The Bella_TEA_Power meter then fails. Solution is to switch off 14.77.

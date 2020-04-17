@@ -1,0 +1,14 @@
+#296
+AUX
+OUT
+ERR?/qonly/
+CLR/nquery/
+FOLD
+DLY
+VSET
+ISET
+TRG/nquery/
+OVP
+UVP
+HELP?/qonly/
+HLP?/qonly/

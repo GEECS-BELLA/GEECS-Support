@@ -1,0 +1,8 @@
+Install Omnidriver+Spam installer
+
+For loasis: The file is loaced at W:\Software\Install\OceanOptics Spectroscope\OmniDriver+Spam
+For BELLA: The file is located at H:\Software\Installs and Manuals\Ocean Optics\Windows 32-bit\Version 2.37
+Password/Serial No for driver installer: Etm4QBn7gd
+
+use version 2.37 32 bit windows. 
+Works with LV2013 32 bit on windows 7 64 bit os and 64 bit machine.

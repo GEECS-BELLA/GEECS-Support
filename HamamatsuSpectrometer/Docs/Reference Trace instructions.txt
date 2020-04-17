@@ -1,0 +1,7 @@
+GUI_HamamatsuSpectrometer is the general GUi for all spectrometers. It will display a reference trace also. 
+To Set up a reference trace please follow these instructions:
+
+1. navigate to the control-all-loasis/user data folder.
+2. Create a folder with the name of the spectrometer and save the reference trace in this folder. I have already done this for XPW_Spectrometer at "W:\Software\control-all-loasis\user data" as an example. If the folder with the name of teh spectrometer already exists, do not create another one.
+3. Open the configurations.ini file, and add the path to the reference trace against the name of the spectrometer. example: XPW_Spectrometer= "W:\\Software\\control-all-loasis\\user data\\XPW_Spectrometer\\XPW_Spectrometer_001.txt"
+Look in the configurations.ini file located at "W:\Software\control-all-loasis\user data" to find the path for the XPW_Spectrometer as an example.

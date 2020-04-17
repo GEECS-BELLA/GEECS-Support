@@ -1,0 +1,77 @@
+;
+; Copyright(C) 2013-2015 TDK All rights reserved.
+;
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%Manf%
+DriverVer=11/22/2015,1.0.0.3
+CatalogFile=Z_serial_port.cat
+
+
+[Manufacturer] 
+%Manf%=Manf,NT,NTx86,NTamd64,NTia64
+
+;for all platforms 
+[Manf] 
+%Manf%=UsbPort,USB\VID_2504&PID_0001
+%Manf_CDC%=UsbPort,USB\VID_2504&PID_0001
+
+;for windows 2000 non intel platforms 
+[Manf.NT] 
+%Manf_CDC%=UsbPort,USB\VID_2504&PID_0001
+
+;for x86 platforms 
+[Manf.NTx86] 
+%Manf_CDC%=UsbPort,USB\VID_2504&PID_0001
+
+;for x64 platforms 
+[Manf.NTamd64] 
+%Manf_CDC%=UsbPort,USB\VID_2504&PID_0001
+
+;for IA64 platforms 
+[Manf.NTia64] 
+%Manf_CDC%=UsbPort,USB\VID_2504&PID_0001
+
+;------------------------------------------------------------------------------
+;  Installation
+;------------------------------------------------------------------------------
+
+[SourceDisksFiles]
+
+[SourceDisksNames]
+
+[DestinationDirs]
+FakeModemCopyFileSection=12
+DefaultDestDir=12
+
+[UsbPort]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=UsbPort.AddReg
+
+[UsbPort.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[UsbPort.Services]
+AddService=usbser, 0x00000002, DriverService
+
+[DriverService]
+DisplayName = %Serial.SvcDesc% 
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER 
+StartType = 3 ; SERVICE_DEMAND_START 
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL 
+ServiceBinary = %12%\usbser.sys 
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+Manf = "TDK-LAMBDA" 
+Manf_CDC = "Z+ serial port"
+Serial.SvcDesc = "Z+ serial driver" 

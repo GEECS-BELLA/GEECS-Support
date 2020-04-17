@@ -1,0 +1,4 @@
+There should be 1 filter wheel device per experiment. i.e. use usb2enet converters and put them all on one computer.
+
+i.e. the name should be general like BELLA_filter_wheels
+then fill in the details for each fw. eg port, name, diode, low and high power

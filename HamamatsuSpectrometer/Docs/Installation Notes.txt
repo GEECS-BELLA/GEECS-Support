@@ -1,0 +1,18 @@
+1. LabVIEW inteface with Hamamastu Spectrmeter requires Win32 XP OS.
+2. Use the 32Bit XP installion file located inH:\Software\Installs\Hamamatsu Spectrometer Install\Win XP 32-bit Installer. The correct version is: 
+AppVersion: 1,0,0,73 Build 20070110_1(WinXPsp1)
+DLL Version: 1.3.0.1 [specu1a.dll]
+Driver Version: 1.2.0.0 [specu1a.sys]
+
+DO NOT USE THE CD installation
+
+
+3. The Spectrometer should be unplugged while installing the driver. Restart comp after installation finishes.
+4. Plug the spectrometer in a usb port after restarting the computer.
+5. The "New Hardware Found" wizard will pop up. If a driver is not automatically selected, choose the specu1a.inf from the system32 folder
+   (Note* Spectrometer will not communicate with LabVIEW with any other newer Hamamatsu driver)
+6. Restart computer (Not mandatory)
+7. Go have some beer!!!
+
+
+
