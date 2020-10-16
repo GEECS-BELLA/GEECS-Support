@@ -1,0 +1,64 @@
+[Scan1]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229375:7,0.050229425:7,0.050229475:7,0.050229525:7,0.050229575:7,0.050229625:7,0.050229675:7,0.050229725:7,0.050229775:7,0.050229825:7,0.050229875:7"
+[Scan2]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan3]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229375:1"
+[Scan4]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan5]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229425:1"
+[Scan6]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan7]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229475:1"
+[Scan8]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan9]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229525:1"
+[Scan10]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan10]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229575:1"
+[Scan11]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan10]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229575:1"
+[Scan2]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
+[Scan10]
+Device = "HeatHighlandT564"
+Variable = "Discharge timing s"
+Values:#shots = "0.050229575:1"
+[Scan2]
+Device = "PL1-PresCtrl-Low1"
+Variable = "P. Control Down (Torr)"
+Values:#shots = "10:7,15:7,20:7,25:7,30:7,35:7,40:7,45:7,50:7,55:7,60:7,65:7,70:7"
