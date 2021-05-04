@@ -1,0 +1,40 @@
+[Scan27]
+Device = "PL1-Hexapod"
+Variable = "wangle"
+Values:#shots = "0.437:1"
+[Scan28]
+Device = "PL1-Hexapod"
+Variable = "ypos"
+Values:#shots = "2.685:5,2.710:5,2.735:5,2.760:5,2.785:5"
+[Scan29]
+Device = "PL1-Hexapod"
+Variable = "wangle"
+Values:#shots = "0.462:1"
+[Scan30]
+Device = "PL1-Hexapod"
+Variable = "ypos"
+Values:#shots = "2.685:5,2.710:5,2.735:5,2.760:5,2.785:5"
+[Scan31]
+Device = "PL1-Hexapod"
+Variable = "wangle"
+Values:#shots = "0.487:1"
+[Scan32]
+Device = "PL1-Hexapod"
+Variable = "ypos"
+Values:#shots = "2.685:5,2.710:5,2.735:5,2.760:5,2.785:5"
+[Scan33]
+Device = "PL1-Hexapod"
+Variable = "wangle"
+Values:#shots = "0.512:1"
+[Scan34]
+Device = "PL1-Hexapod"
+Variable = "ypos"
+Values:#shots = "2.685:5,2.710:5,2.735:5,2.760:5,2.785:5"
+[Scan35]
+Device = "PL1-Hexapod"
+Variable = "wangle"
+Values:#shots = "0.537:1"
+[Scan36]
+Device = "PL1-Hexapod"
+Variable = "ypos"
+Values:#shots = "2.685:5,2.710:5,2.735:5,2.760:5,2.785:5"

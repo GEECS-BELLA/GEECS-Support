@@ -1,0 +1,7 @@
+[LB-PL-EnergyMeter]
+Target propagation (%) = "73.6842"
+mirror transmittance (%) = "4.356"
+mirror offset (mJ) = "0"
+Attenuator 1 transmittance (%) = "1.83867"
+Attenuator 2.1 transmittance (%) = "0"
+Attenuator 2.2 transmittance (%) = "10.1068"
