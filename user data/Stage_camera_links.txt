@@ -1,0 +1,12 @@
+[HPD_CCD]
+Stage name = "HPDTelescopeStage"
+Stage variable name = "position"
+Target ManualParameters name = "Targets_HPD_CCD"
+[HeatHPDCCD]
+Stage name = "HPDTelescopeStage"
+Stage variable name = "position"
+Target ManualParameters name = "Targets_HeatHPDCCD"
+[HPDccd2]
+Stage name = "HPD_ESP2"
+Stage variable name = "Position.Axis 3"
+Target ManualParameters name = "Targets_HPDccd2"

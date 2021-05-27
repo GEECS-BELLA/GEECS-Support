@@ -1,0 +1,8 @@
+[Scan1]
+Device = "HPDTelescopeStage"
+Variable = "position"
+Values:#shots = "185:2,190:2"
+[Scan2]
+Device = "HeatHighlandT564"
+Variable = "Channel3.Delay"
+Values:#shots = "0.0000000:2,0.00001:3"
