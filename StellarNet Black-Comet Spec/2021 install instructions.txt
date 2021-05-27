@@ -1,0 +1,4 @@
+Run SWDriver64 as admin
+Run SWUpdate as admin
+RUN THE COMPILED CODE (exe) LOCALLY. IT DOESNT WORK OFF SERVER.
+For development in LabVIEW, run LabVIEW as administrator
